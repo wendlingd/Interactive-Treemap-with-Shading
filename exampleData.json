@@ -1,0 +1,520 @@
+{
+  "name": "contentByGroup",
+  "children":[
+    { 
+   "pageGroupID": "30000",
+   "name": "Nursing topics",
+   "children": [
+      {
+        "pageGroupID": "4692",
+        "name": "A manual of nursing",
+        "groupPageCount": 111,
+        "aveMonthlyViewsGr": 49169, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4182",
+        "name": "A century of nursing",
+        "groupPageCount": 426,
+        "aveMonthlyViewsGr": 103375, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4412",
+        "name": "Manual of rules for child-bed nursing",
+        "groupPageCount": 57,
+        "aveMonthlyViewsGr": 518, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4662",
+        "name": "Hospital sisters and their duties",
+        "groupPageCount": 12,
+        "aveMonthlyViewsGr": 0, 
+        "repairTotCount": 10,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4195",
+        "name": "Fever-nursing",
+        "groupPageCount": 161,
+        "aveMonthlyViewsGr": 46, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4667",
+        "name": "The nurse, or, Hints on the care of the sick",
+        "groupPageCount": 53,
+        "aveMonthlyViewsGr": 848, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4674",
+        "name": "The historical development of modern nursing",
+        "groupPageCount": 146,
+        "aveMonthlyViewsGr": 6303, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4668",
+        "name": "Remarks on the training of nurses",
+        "groupPageCount": 137,
+        "aveMonthlyViewsGr": 685, 
+        "repairTotCount": 10,
+        "url": "to-do_list.html"
+      } 
+      ]
+    }
+,{
+   "pageGroupID": "20000",
+   "name": "Hospital topics",
+   "children": [
+      {
+        "pageGroupID": "4255",
+        "name": "Methodist General Hospital: Origin, purposes, needs",
+        "groupPageCount": 146,
+        "aveMonthlyViewsGr": 5941, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4253",
+        "name": "Laws and regulations for the admission and discharge of patients",
+        "groupPageCount": 8,
+        "aveMonthlyViewsGr": 11605, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4257",
+        "name": "Experiments and observations on the summer ventilation and cooling of hospitals",
+        "groupPageCount": 7,
+        "aveMonthlyViewsGr": 11358, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      }
+      ]
+    }
+,{
+   "pageGroupID": "50000",
+   "name": "Physician topics",
+   "children": [
+      {
+        "pageGroupID": "4308",
+        "name": "Two lectures on the conduct of the medical life",
+        "groupPageCount": 243,
+        "aveMonthlyViewsGr": 914, 
+        "repairTotCount": 23,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4285",
+        "name": "Memoir of Butler Wilmarth, M.D.",
+        "groupPageCount": 55,
+        "aveMonthlyViewsGr": 10, 
+        "repairTotCount": 84,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4270",
+        "name": "The ups and downs of a doctor's life",
+        "groupPageCount": 164,
+        "aveMonthlyViewsGr": 33154, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4288",
+        "name": "Addresses on the reciprocal relations existing between physicians and the public",
+        "groupPageCount": 10,
+        "aveMonthlyViewsGr": 41224, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4276",
+        "name": "Proofs of the origin of the yellow fever",
+        "groupPageCount": 102,
+        "aveMonthlyViewsGr": 1235, 
+        "repairTotCount": 26,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4432",
+        "name": "The relation of the medical profession to science",
+        "groupPageCount": 230,
+        "aveMonthlyViewsGr": 56028, 
+        "repairTotCount": 68,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4316",
+        "name": "The physician's knowledge: Orations",
+        "groupPageCount": 23,
+        "aveMonthlyViewsGr": 22373, 
+        "repairTotCount": 52,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4313",
+        "name": "Memoir of the life and character of Prof. Valentine Mott",
+        "groupPageCount": 52,
+        "aveMonthlyViewsGr": 2921, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4344",
+        "name": "On the responsibilities of the medical profession",
+        "groupPageCount": 350,
+        "aveMonthlyViewsGr": 77068, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4382",
+        "name": "The reciprocal relations of physicians and clergymen",
+        "groupPageCount": 151,
+        "aveMonthlyViewsGr": 1366, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4317",
+        "name": "Addresses to Medical Societies",
+        "groupPageCount": 145,
+        "aveMonthlyViewsGr": 13366, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4278",
+        "name": "The elements of medical eminence",
+        "groupPageCount": 141,
+        "aveMonthlyViewsGr": 74203, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4299",
+        "name": "The difficulties, duties, and rewards of the physician",
+        "groupPageCount": 119,
+        "aveMonthlyViewsGr": 61265, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4376",
+        "name": "The country physician",
+        "groupPageCount": 118,
+        "aveMonthlyViewsGr": 11548, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4361",
+        "name": "Benjamin Rush and American psychiatry",
+        "groupPageCount": 113,
+        "aveMonthlyViewsGr": 2819, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4346",
+        "name": "A sketch of the life of Horatio R. Storer, M.D.",
+        "groupPageCount": 113,
+        "aveMonthlyViewsGr": 2819, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4284",
+        "name": "The century's progress in anatomy and physiology",
+        "groupPageCount": 109,
+        "aveMonthlyViewsGr": 10869, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      }
+      ]
+    }
+,{
+   "pageGroupID": "60000",
+   "name": "Surgery topics",
+   "children": [
+      {
+        "pageGroupID": "4419",
+        "name": "The disinfection of dental and surgical instruments",
+        "groupPageCount": 197,
+        "aveMonthlyViewsGr": 4318, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4418",
+        "name": "A new handle and grip for scissors for plastic and other delicate work",
+        "groupPageCount": 195,
+        "aveMonthlyViewsGr": 1282, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4421",
+        "name": "Catalogue of surgical instruments and physicians' supplies, electric and orthopedic apparatus",
+        "groupPageCount": 195,
+        "aveMonthlyViewsGr": 67329, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4420",
+        "name": "Pompeian surgery and surgical instruments",
+        "groupPageCount": 194,
+        "aveMonthlyViewsGr": 1372, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4413",
+        "name": "The principles and practice of surgery",
+        "groupPageCount": 159,
+        "aveMonthlyViewsGr": 196426, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4422",
+        "name": "General surgical pathology and therapeutics",
+        "groupPageCount": 156,
+        "aveMonthlyViewsGr": 60598, 
+        "repairTotCount": 5,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4416",
+        "name": "Manual of operative surgery",
+        "groupPageCount": 150,
+        "aveMonthlyViewsGr": 30321, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4417",
+        "name": "Minor surgery and bandaging",
+        "groupPageCount": 150,
+        "aveMonthlyViewsGr": 47197, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4425",
+        "name": "The present status of abdominal surgery",
+        "groupPageCount": 108,
+        "aveMonthlyViewsGr": 12054, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4423",
+        "name": "On the antiseptic treatment of wounds",
+        "groupPageCount": 42,
+        "aveMonthlyViewsGr": 57917, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      }
+      ]
+    }
+,{
+   "pageGroupID": "70000",
+   "name": "Military topics",
+   "children": [
+      {
+        "pageGroupID": "4464",
+        "name": "The Medical Department, U.S. Army",
+        "groupPageCount": 198,
+        "aveMonthlyViewsGr": 7309, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4459",
+        "name": "On the duties of surgeons on the march",
+        "groupPageCount": 212,
+        "aveMonthlyViewsGr": 155, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4461",
+        "name": "Reports on the condition of military hospitals",
+        "groupPageCount": 199,
+        "aveMonthlyViewsGr": 1000, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4460",
+        "name": "Instructions for medical inspectors of the United States Army",
+        "groupPageCount": 349,
+        "aveMonthlyViewsGr": 689, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4442",
+        "name": "Rules regarding the measures to be adopted on the outbreak of cholera or appearance of small-pox",
+        "groupPageCount": 103,
+        "aveMonthlyViewsGr": 16029, 
+        "repairTotCount": 6,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4454",
+        "name": "A manual of military surgery",
+        "groupPageCount": 67,
+        "aveMonthlyViewsGr": 231, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4449",
+        "name": "Rules for preserving the health of the soldier",
+        "groupPageCount": 20,
+        "aveMonthlyViewsGr": 2464, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4437",
+        "name": "Hints for the control and prevention of infectious diseases, in camps, transports, and hospitals",
+        "groupPageCount": 19,
+        "aveMonthlyViewsGr": 1493, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4575",
+        "name": "Regulations for the Medical Department of the Army",
+        "groupPageCount": 19,
+        "aveMonthlyViewsGr": 1493, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4324",
+        "name": "Directions to Army surgeons on the field of battle",
+        "groupPageCount": 17,
+        "aveMonthlyViewsGr": 14864, 
+        "repairTotCount": 8,
+        "url": "to-do_list.html"
+      }
+      ]
+    }
+,{
+   "pageGroupID": "160000",
+   "name": "Medical topics from before 1900",
+   "children": [
+      {
+        "pageGroupID": "4436",
+        "name": "Lasting legacies: Gifts to medicine and the American people",
+        "groupPageCount": 67,
+        "aveMonthlyViewsGr": 4, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4494",
+        "name": "The new forensic science",
+        "groupPageCount": 42,
+        "aveMonthlyViewsGr": 29584, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4170",
+        "name": "The old root and herb doctor",
+        "groupPageCount": 32,
+        "aveMonthlyViewsGr": 654, 
+        "repairTotCount": 4,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4497",
+        "name": "The American practice abridged, or the family physician: Being the scientific system of medicines",
+        "groupPageCount": 25,
+        "aveMonthlyViewsGr": 42, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4498",
+        "name": "A dictionary of medical terminology, dental surgery, and the collateral sciences",
+        "groupPageCount": 12,
+        "aveMonthlyViewsGr": 0, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4493",
+        "name": "The family physician: Comprising rules for the prevention and cure of diseases",
+        "groupPageCount": 9,
+        "aveMonthlyViewsGr": 715, 
+        "repairTotCount": 2,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4502",
+        "name": "Anaesthetics: Brief of points and proofs in support of petitions, memorials, resolutions and letters",
+        "groupPageCount": 7,
+        "aveMonthlyViewsGr": 14, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4435",
+        "name": "On ecclecticism in medicine, or: A critical review of the leading medical doctrines",
+        "groupPageCount": 6,
+        "aveMonthlyViewsGr": 1, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4325",
+        "name": "Synopsis of lectures on obstetrics and the forms of disease peculiar to women and children",
+        "groupPageCount": 4,
+        "aveMonthlyViewsGr": 2646, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4469",
+        "name": "Notes on the cholera at Varna in 1854",
+        "groupPageCount": 2,
+        "aveMonthlyViewsGr": 324464, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4171",
+        "name": "Have we the best possible ambulance system?",
+        "groupPageCount": 1,
+        "aveMonthlyViewsGr": 3483, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } ,
+      {
+        "pageGroupID": "4480",
+        "name": "The ship and shore physician and surgeon",
+        "groupPageCount": 1,
+        "aveMonthlyViewsGr": 83, 
+        "repairTotCount": 0,
+        "url": "to-do_list.html"
+      } 
+      ]
+    }
+]}
