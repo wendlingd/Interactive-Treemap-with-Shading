@@ -1,0 +1,237 @@
+/* Normalize */
+body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td, legend {
+	margin: 0;
+	padding: 0;
+} /*div,*/
+
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-size: 100%; }
+address, caption, cite, code, dfn, th, var { font-style: normal; font-weight: normal; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset,img { border: 0; }
+caption,th { text-align: left; }
+/* @end Normalize */
+
+
+/* General */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: auto; 
+  margin-left:1em;
+  position: relative;
+  width: 954px;
+}
+
+p, ul {
+	margin-top:1em;
+}
+
+
+/*form {
+    font-size: 12px;
+}*/
+.clr { clear: both; }
+/* @end General */
+
+.container {
+	margin-left:100px;
+}
+
+/* Filters */
+#filters {
+    height: 4em;;
+	margin-top:2em;
+}
+    #filters label {
+        font-size: 90%;;
+        //font-weight: bold;
+    }
+    #filters #leftfilters {
+        float: left;
+        width: 130px;
+        border-right: 1px solid #e0e0e0;
+        height: 80px;
+        margin-right: 10px;
+    }
+        #filters #categorySelect {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+    #filters #rightfilters {
+        width: 775px;
+        float: left;
+    }
+/* @end Filters */    
+
+
+
+/* Progress loader */
+#loadprogress {
+    position: relative;
+    top: -350px;
+    left: 470px;
+    width: 100px;
+    text-align: center;
+    font-size: 85%;
+    text-transform: uppercase;
+    line-height: 1.4em;
+}
+/* @end Progress loader */
+
+
+/* Treemap */
+
+.node {
+    border: solid 1px #999; /* org was .3px */
+    font: 10px Helvetica, sans-serif;
+    text-align: left;
+    vertical-align: middle;
+    line-height: 1.2em;
+    overflow: hidden;
+    position: absolute;
+    color: #333333; /* #777 was e0e0e0 Try 333 */
+    cursor: default;
+    background: #fff;
+}
+
+.parent.node {
+    border: 1px solid #999;
+    background: #999;
+}
+.node .childlabel {
+    padding: 2px 0px 0 4px;
+    color: gray; /* ligher would be c3c3c3; gray:808080 */
+}
+.parentlabel {
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    overflow: hidden;
+    color: #9a16bf;
+    pointer-events: none;
+    display: none;
+}
+
+#occundefined {
+    background: #999;
+}
+
+/* child boxes that become shaded. If gradient is added, go dark and make this text white */
+.node.highlight {
+    background: #f2dede; //  /* shade of blocks. Green is d1f77b, red, bootstrap warning: f2dede; pink:ffc0cb, LightCoral:F08080 */
+    color: #000; /* Options for text darkness: black, gray, c3c3c3 */
+   font-weight: bold;
+}
+.node.highlight:hover, .node:hover {
+    background: #ff6;
+}
+.node.selected {
+    background: #ff6;
+    color: #000;
+}
+.parent.node:hover {
+    background: #999;
+}
+
+
+/* @end Treemap */
+
+/* Slider */
+.axis {
+    font-size: 85%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.axis .domain {
+    fill: none;
+    stroke: #333;
+    stroke-opacity: .4;
+    stroke-width: 7.5px;
+    stroke-linecap: square;
+}
+
+.slider .highlighter {
+    fill: #d1f77b; /* change this if you change the box shade */
+    stroke: #d1f77b;
+/*    fill: black;*/
+/*    stroke: black;*/
+}
+
+.axis .halo {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6px;
+    stroke-linecap: square;
+}
+
+.slider .handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: .5;
+    stroke-width: 1.25px;
+    pointer-events: none;
+}
+/* @end Slider */
+
+
+
+/* Tooltip */
+#tooltip {
+	position:absolute;
+    width: 200px;
+    line-height: 1.1em;
+    height: auto;
+    padding: 8px;
+    background-color: #fff;
+    pointer-events: none;
+    font-size: 12px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    border: 1px solid #ddd;
+}
+#tooltip.hidden {
+    display: none;
+}
+#tooltip #contGroup {
+    font-size: 9px;
+    font-weight: normal;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+#tooltip #groupTitle {
+    font-weight: bold;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 7px;
+}
+#tooltip #pagesPoints {
+    text-align: center;
+}
+
+#tooltip #groupTraffic {
+    margin-bottom: 5px;
+    text-align: center;
+}
+/* @end Tooltip */
+
+
+.facetReportButton {
+	padding:6px 6px 8px 6px;
+	margin: 0 4px 0 4px;
+}
+.facetReportButton span {
+	margin-left:.3em;
+}
+#credits { 
+    font-size: 10px; 
+    text-align: right;
+}
+ul, li {
+	margin-left:1em;
+}
