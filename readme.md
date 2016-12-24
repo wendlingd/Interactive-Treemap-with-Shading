@@ -24,6 +24,8 @@ Repair does not need to be spotty or haphazard; instead, proactively understand 
 
 ## Recommendations
 
-- Start with a foundation of a 100-percent content inventory and average monthly traffic, in a database. (Average monthly traffic: export from traffic tool by month and divide the total by the number of months for which data is available; this removes a bias against brand new content - don't compare 12 months of data to 1 month of data.)  Use a web spidering tool or a programmer's tool such as the HTML::Tree module of Perl for the content inventory, and CSV exports from your traffic tool.
-- With this in the database you can then layer one or more issues of the day - shown here is a common problem, broken link reporting, an easy join in the database.
-- Set the top-level category as the people/resource considered to be the content steward or owner. Shown here as "topics." Store the data in hierarchical JSON and display the treemap both as the full site and by content steward.
+- Create a database and add a 100-percent content inventory from a web spidering tool or a programmer's tool such as the HTML::Tree module of Perl.
+- Aggregate average monthly traffic for each separate "communication package," also known as microsite or content group - one for each thematic group of pages you own. Average monthly traffic can be exported in CSV from a traffic tool by month, joined to communication packages, after which SQL can divide total communication package traffic by the number of months for which data is available. This removes a bias against brand new content - don't compare 12 months of data for one communication package to 1 month of data for the newest communication packages, for example. However, this method can provide artificially higher totals for low-traffic packages.
+- With these two foundational components in the database, you can then layer one or more issues of the day - shown here is a common problem, broken link reporting, an easy join in the database.
+- Set the top-level category as the people/resource considered to be the content steward or owner, shown here as "topics." Store the data in hierarchical JSON and display the treemap both as the full site and by content steward.
+- Under the chart, add a sortable table as an accessible equivalent.
