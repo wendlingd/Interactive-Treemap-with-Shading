@@ -24,4 +24,4 @@ Repair does not need to be spotty or haphazard; instead, proactively understand 
 
 - Start with a foundation of a 100-percent content inventory and average monthly traffic, in a database. (Average monthly traffic: export from traffic tool by month and divide the total by the number of months for which data is available; this removes a bias against brand new content - don't compare 12 months of data to 1 month of data.)  Use a web spidering tool or a programmer's tool such as the HTML::Tree module of Perl for the content inventory, and CSV exports from your traffic tool.
 - With this in the database you can then layer one or more issues of the day - shown here is a common problem, broken link reporting, an easy join in the database.
-- Set the top-level category as the people/resource considered to be the content steward or owner. Store the data in hierarchical JSON and display the treemap both as the full site and by content steward.
+- Set the top-level category as the people/resource considered to be the content steward or owner. Shown here as "topics." Store the data in hierarchical JSON and display the treemap both as the full site and by content steward.
