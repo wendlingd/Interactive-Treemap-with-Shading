@@ -1,5 +1,7 @@
 # Read Me
 
+Source of this chart was Nathan Yau's excellent [Jobs Charted by State and Salary.](http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/)
+
 ## Visualize and Accelerate Web Site Repairs 
 
 ### Focus on the fundamentals with a D3.js interactive treemap
