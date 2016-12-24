@@ -10,7 +10,7 @@ Are you struggling to meet an aggressive deadline for migration to a new video p
 
 When the job to be done is finding and fixing problems that are disrupting web site visits today, or finding and proactively retiring obsolete code that will hinder your site's ability to deliver good experiences in the future, this tool can:
 
-1. Reveal where in the site problems are occurring, with their level of severity.
+1. Help you visualize where in the site problems are occurring, with their level of severity.
 2. Reveal by microsite name and traffic how much this severity should matter to you.
 
 The result is that you can conduct a lightweight cost-benefit analysis, mentally comparing the level of work needed for the repair, on the one hand, to an estimate of the resulting benefit, or lack thereof, of making the repairs, on the other hand, and you can fix the content that's most important to your mission, first, and retire the content that is no longer delivering benefits to save staff time for more important things.
