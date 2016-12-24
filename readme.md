@@ -13,8 +13,9 @@ When the job to be done is finding and fixing problems that are disrupting web s
 
 The result is that you can conduct a lightweight cost-benefit analysis, mentally comparing the level of work needed for the repair, on the one hand, to an estimate of the resulting benefit, or lack thereof, of making the repairs, on the other hand, and you can fix the content that's most important to your mission, first, and retire the content that is no longer delivering benefits to save staff time for more important things.
 
-Repair does not need to be spotty or haphazard; instead, proactively understand and prioritize the work that should be done, based on MISSION, problem severity, and staff availability.
+Repair does not need to be spotty or haphazard; instead, proactively understand and prioritize the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, and your staff availability.
 
+[Screenshot}(https://cloud.githubusercontent.com/assets/10210191/21468418/8c07f230-c9dd-11e6-8a0e-3705896620c4.png)
 
 ## Recommendations
 
