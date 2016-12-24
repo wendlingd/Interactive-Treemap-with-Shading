@@ -18,7 +18,7 @@ The result is that you can conduct a lightweight cost-benefit analysis, mentally
 Repair does not need to be spotty or haphazard; instead, proactively understand and prioritize the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, and your staff availability.
 
 
-## Screenshot (this version is NOT interactive)
+### Screenshot (this version is NOT interactive)
 
 ![Screenshot](https://cloud.githubusercontent.com/assets/10210191/21468551/52f97b3c-c9e5-11e6-81f2-10ad662bb16a.png)
 
