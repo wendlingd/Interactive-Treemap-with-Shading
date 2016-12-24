@@ -20,7 +20,7 @@ Repair does not need to be spotty or haphazard; instead, proactively understand 
 
 ## Screenshot (this version is NOT interactive)
 
-![Screenshot](https://cloud.githubusercontent.com/assets/10210191/21468418/8c07f230-c9dd-11e6-8a0e-3705896620c4.png)
+![Screenshot](https://cloud.githubusercontent.com/assets/10210191/21468551/52f97b3c-c9e5-11e6-81f2-10ad662bb16a.png)
 
 ## Recommendations
 
