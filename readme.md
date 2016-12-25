@@ -15,7 +15,7 @@ When the job to be done is finding and fixing problems that are disrupting web s
 1. Help you visualize where in the site problems are occurring, with their level of severity.
 2. Reveal by microsite name and traffic how much this severity should matter to you.
 
-The result is that you can conduct a lightweight cost-benefit analysis, mentally comparing the **cost** to you of repairing the content, on the one hand, to an estimate of the resulting benefit, or lack thereof, of making the repairs, on the other hand. Then you can work out fixing the content that's most important to your mission, first, and you can retire content that is no longer delivering benefits, which will free up staff time for web communication that is a better return on your investment.
+The result is that you can conduct a lightweight cost-benefit analysis, mentally comparing the **cost** to you of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then you can work out fixing the content that's most important to your mission, first, and you can retire content that is no longer delivering benefits, which will free up staff time for web communication that is a better return on your investment.
 
 Repair does not need to be spotty or haphazard; instead, proactively understand and prioritize the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, and your staff availability.
 
