@@ -6,7 +6,9 @@ Source of this chart was Nathan Yau's excellent [Jobs Charted by State and Salar
 
 ### Focus on the fundamentals with a D3.js interactive treemap
 
-Are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? In web publishing, there are always components in transition from trusted to obsolete. 
+Are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? In web publishing, there are always components in transition from trusted to obsolete. Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
+
+My car's dashboard has an indicator that flashes when it's time for an oil change and tune-up - "Maintenance Required." My organization's web content management system has nothing similar; that's what this is for.
 
 When the job to be done is finding and fixing problems that are disrupting web site visits today, or finding and proactively retiring obsolete code that will hinder your site's ability to deliver good experiences in the future, this tool can:
 
