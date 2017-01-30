@@ -7,7 +7,7 @@ Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http:/
 > My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
 
 
-### Focus on the fundamentals with a D3.js interactive treemap
+### D3.js interactive treemap with shading, from JSON, helps you focus on web site quality fundamentals
 
 Are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? In web publishing, there are always components in transition from trusted to obsolete. Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
 
