@@ -4,7 +4,7 @@ Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http:/
 
 ## Visualize and Accelerate Web Site Repairs 
 
-> My car's dashboard has an indicator that flashes when it's time for an oil change and tune-up - It says **Maintenance required**. My organization's web content management system has nothing similar; that's what this is for.
+> My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
 
 
 ### Focus on the fundamentals with a D3.js interactive treemap
