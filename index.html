@@ -393,13 +393,13 @@ function numberWithCommas(x) {
 </script>
 
 
-<h2>D3.js &quot;web site health check&quot;</h2>
+<h2>D3.js &quot;web site health check&quot; - Treemap, shaded, from hierarchical JSON</h2>
 
 <p>Source: Nathan Yau's <a href="http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/">&quot;Jobs Charted by State and Salary.&quot;</a></p>
 
-<p>Whole-ecology treemap visualization that surfaces problems in a large web site (here - broken links), based on 100-percent content inventory (static HTML pages) plus traffic. This foundational data can be paired with various error reports; helps product managers and above make sense of the highest-severity problems, and helps staff decide what communication packages (thematic groups of pages) should be fixed first - based on severity (highest error count and/or highest traffic), and also based on the staff specialists available to work now, based on organization priorities, etc. Points are used instead of item counts, so management is able to shift work priorities by raising the severity of one or more errors.</p>
+<p>Whole-ecology treemap visualization to surface quality problems in a large web site. Foundational data - content inventory plus traffic - can be paired with one or more error reports such as broken links. Helps product managers comprehend what their highest-severity problems are, and helps them decide what communication packages (thematic groups of pages) should be fixed first. Here, points are used instead of item counts, so management is able to shift work priorities by raising the severity of one or more error types.</p>
 
- <p>This tool has been scaled effectively to a site of 30,000 static HTML pages grouped into 420 thematic groups with 16 owners (what is shown as &quot;topics&quot; in this version of the map are organization owners in the production map) with dozens of product managers. The JSON is hierarchical, allowing one topic to become the whole map (not implemented here). Each content group is a member of a topic category. The database includes multiple error / fix reports, including:</p>
+<p>This tool has been scaled effectively to a site of 30,000 static HTML pages grouped into 420 thematic groups with 16 owners (what is shown as &quot;topics&quot; in this version of the map are organization owners in the production map) with dozens of product managers. The JSON is hierarchical, allowing one topic to become the whole map (not implemented here). Each content group is a member of a topic category. The database includes multiple error / fix reports, including:</p>
 
 <ul>
 	<li>Broken links</li>
