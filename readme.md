@@ -2,14 +2,14 @@
 
 Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/)
 
-## Visualize and Accelerate Web Site Repairs 
+## Visualize and Accelerate Web Site Repairs - D3.js treemap from JSON
 
 > My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
 
 
-###Focus on the big picture and improve your web site quality. D3.js treemap from JSON
+###Focus on the big picture and improve your web site quality
 
-Have you felt blindsided by a new requirement for web site repair? How bad is it? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be one? In web publishing, there are always components that are in transition, moving from "trusted" to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
+Have you felt blindsided by a new requirement for web site repair? How bad is it? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be done? In web publishing, there are always components that are in transition, moving from "trusted" to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
 
 When the job to be done is finding and fixing problems that are disrupting web site visits today, or finding and proactively retiring obsolete code that will hinder your site's ability to deliver good experiences in the future, this tool can:
 
