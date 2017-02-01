@@ -18,9 +18,9 @@ When the job to be done is finding and fixing problems that are disrupting web s
 
 This is done by establishing a foundational metaphor for your whole ecology - a map of the territory. Then when any new issue arises, you overlay the new report, consisting of URL-Problem Description, quickly and easily onto the map so all teams can see and understand where they stand in regard to this new maintenance problem.
 
-The result is that team members can conduct a lightweight cost-benefit analysis for every microsite they own, mentally comparing the **cost** of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then they can work out fixing the content that's most important to the organizational mission, FIRST, and you can retire content that is no longer delivering benefits, which will free up staff time to improve the web communications that offer better return on your staff investment.
+The result is that team members can conduct a lightweight cost-benefit analysis for every microsite they own, mentally comparing the **cost** of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then they can work out fixing the content that's most important to the organizational mission, FIRST, and they can retire broken content that is no longer delivering benefits, which will free up staff time to improve the web communications that offer better return on your staff investment.
 
-Repair does not need to be spotty or haphazard; instead, proactively UNDERSTAND and PRIORITIZE the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, your staff availability, etc.
+Web site repair does not need to be spotty or haphazard. Instead, you should proactively UNDERSTAND and PRIORITIZE work that should be done, based on an ecology-wide view encompassing your MISSION, the problem's severity, your staff availability, etc.
 
 
 ### Screenshot (this version is NOT interactive)
