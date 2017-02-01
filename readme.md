@@ -9,18 +9,18 @@ Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http:/
 
 ###Focus on the big picture and improve your web site quality
 
-Have you felt blindsided by a new requirement for web site repair? How bad is it? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be done? In web publishing, there are always components that are in transition, moving from "trusted" to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
+Have you felt blindsided by a new requirement for web site repair? How bad is it? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be done? In web publishing, there are always components that are in transition, moving from "trusted" to "broken" and eventually to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
 
-When the job to be done is finding and fixing problems that are disrupting web site visits today, or finding and proactively retiring obsolete code that will hinder your site's ability to deliver good experiences in the future, this tool can:
+When the job to be done is finding, scheduling, and fixing problems that are disrupting customer visits today, or finding and proactively retiring obsolete code and content that will hinder your organization's ability to deliver good experiences in the future, this tool can:
 
-1. Help you visualize where in the site problems are occurring, with their level of severity.
-2. Reveal by microsite name and traffic how much this severity ought to matter to you as you plan your repairs.
+1. Help you visualize exactly where problems are occurring within your site, with their level of severity.
+2. Reveal by microsite name and traffic how much this severity ought to matter to you as you organize your staff efforts to repair the site.
 
-This is done by establishing a foundational metaphor for your whole ecology - a map of the territory. Then when any new issue arises, you overlay the new report, consisting of URL-Problem Description, quickly and easily onto the map so all teams can see and understand where they stand in regard to this new maintenance problem.
+This is done by establishing a foundational metaphor for your whole ecology - a map. Then when any new situation arises, you overlay the new report, consisting of URL-Problem Description, quickly and easily onto the map, by itself or together with other problem reports, so all teams can comprehend the situation they are in and start on the shortest path to positive action.
 
 The result is that team members can conduct a lightweight cost-benefit analysis for every microsite they own, mentally comparing the **cost** of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then they can work out fixing the content that's most important to the organizational mission, FIRST, and they can retire broken content that is no longer delivering benefits, which will free up staff time to improve the web communications that offer better return on your staff investment.
 
-Web site repair does not need to be spotty or haphazard. Instead, you should proactively UNDERSTAND and PRIORITIZE work that should be done, based on an ecology-wide view encompassing your MISSION, the problem's severity, your staff availability, etc.
+Web site repair does not need to be spotty or haphazard. Nor should an organization's content components be like leaves falling on a lake - highly visiable right after posting, but sinking out of site and out of mind shortly afterward, and yet, still there. Instead, you should proactively UNDERSTAND and PRIORITIZE work that should be done, based on an ecology-wide view encompassing your MISSION, the problem's severity, your staff availability, etc.
 
 
 ### Screenshot (this version is NOT interactive)
