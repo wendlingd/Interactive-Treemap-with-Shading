@@ -7,18 +7,20 @@ Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http:/
 > My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
 
 
-### D3.js interactive treemap with shading, from JSON, helps you focus on web site quality fundamentals
+###Focus on the big picture and improve your web site quality. D3.js treemap from JSON
 
-Are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? In web publishing, there are always components in transition from trusted to obsolete. Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
+Have you felt blindsided by a new requirement for web site repair? How bad is it? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be one? In web publishing, there are always components that are in transition, moving from "trusted" to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
 
 When the job to be done is finding and fixing problems that are disrupting web site visits today, or finding and proactively retiring obsolete code that will hinder your site's ability to deliver good experiences in the future, this tool can:
 
 1. Help you visualize where in the site problems are occurring, with their level of severity.
-2. Reveal by microsite name and traffic how much this severity should matter to you.
+2. Reveal by microsite name and traffic how much this severity ought to matter to you as you plan your repairs.
 
-The result is that you can conduct a lightweight cost-benefit analysis, mentally comparing the **cost** to you of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then you can work out fixing the content that's most important to your mission, first, and you can retire content that is no longer delivering benefits, which will free up staff time for web communication that is a better return on your investment.
+This is done by establishing a foundational metaphor for your whole ecology - a map of the territory. Then when any new issue arises, you overlay the new report, consisting of URL-Problem Description, quickly and easily onto the map so all teams can see and understand where they stand in regard to this new maintenance problem.
 
-Repair does not need to be spotty or haphazard; instead, proactively understand and prioritize the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, and your staff availability.
+The result is that team members can conduct a lightweight cost-benefit analysis for every microsite they own, mentally comparing the **cost** of repairing the content, on the one hand, to an estimate of the resulting **benefit**, or lack thereof, of investing resources in repairs, on the other hand. Then they can work out fixing the content that's most important to the organizational mission, FIRST, and you can retire content that is no longer delivering benefits, which will free up staff time to improve the web communications that offer better return on your staff investment.
+
+Repair does not need to be spotty or haphazard; instead, proactively UNDERSTAND and PRIORITIZE the work that should be done, based on an ecology-wide view where you can think about your MISSION, the problem's severity, your staff availability, etc.
 
 
 ### Screenshot (this version is NOT interactive)
