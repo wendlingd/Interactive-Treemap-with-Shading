@@ -2,6 +2,8 @@
 
 Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http://flowingdata.com/2014/07/02/jobs-charted-by-state-and-salary/)
 
+[Compact version of this (Github Gist).](http://bl.ocks.org/wendlingd/af1e751e97c5211ff11277c985e5e642)
+
 ## Visualize and Accelerate Web Site Repairs - D3.js treemap from JSON
 
 > My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
