@@ -34,7 +34,7 @@
 
     <div id="rightfilters">
         <div id="sliderholder">
-            <label>Drag the traffic slider (below) all the way left; this is your  <strong><em>total severity</em></strong> for all problems, everywhere in the web site. Then drag all the way right; dragging back left, you will see your highest traffic problems as they appear, in red. The score in points appears after each title. Default = 5,000 page views/mo. Green and &quot;0 points&quot; means no errors.</label>
+            <label>Drag the traffic slider (below) all the way left; this is your  <strong><em>total severity</em></strong> for all problems, everywhere in the web site. Then drag all the way right; dragging back left, you will see your highest traffic problems as they appear, in blue. The score in points appears after each title. Default = 5,000 page views/mo. Gray and &quot;0 points&quot; means no errors.</label>
         </div>
     </div><!-- end rightfilters -->
 
@@ -100,7 +100,7 @@ d3.json("exampleData.json")
 }
 
 colorScale = d3.scale.linear()
-    .range(['#FFA07A', '#800000']) // pink to maroon. dark red: a94442. See https://en.wikipedia.org/wiki/Web_colors
+    .range(['##9ecae1', '##08306b']) // pink to maroon. dark red: a94442. See https://en.wikipedia.org/wiki/Web_colors
     .domain([1, maxshade]);
 		
         d3.select("#loadprogress").remove();
@@ -378,7 +378,7 @@ function getColor(d) {
     if (d.children) {
         return null;
 	} else if (d.aveMonthlyViewsGr > medCutoff && !d.children) {
-        if (d.repairTotCount < 1) return "#d1f77b";
+        if (d.repairTotCount < 1) return "#D3D3D3";
         return colorScale(d.repairTotCount);
     } else {
         return null;
@@ -402,7 +402,7 @@ function numberWithCommas(x) {
 <p>The database this runs with has multiple error / fix reports, including:</p>
 
 <ul>
-	<li>Broken links</li>
+    <li>Broken links</li>
     <li>Outdated video formats</li>
     <li>Content not reviewed by a subject specialist in the past 12 months</li>
     <li>Pages linking to Word, Excel, and other &quot;non-web&quot; documents that should be evaluated for conversion to HTML</li>
