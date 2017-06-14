@@ -9,7 +9,7 @@ Source of this chart was Nathan Yau's [Jobs Charted by State and Salary.](http:/
 > My car's dashboard has an indicator that tells me when it's time for an oil change and tune-up - it flashes **Maintenance Required**. My organization's web content management system has nothing similar; that's what this is for.
 
 
-###Focus on the big picture and improve your web site quality
+### Focus on the big picture and improve your web site quality
 
 Have you felt blindsided by a new requirement to fix an issue that appears across your web site? How bad is this new problem? Or, are you struggling to meet an aggressive deadline for migration to a new video player? Wondering what area of your web site should be targeted next for conversion to responsive design? What is the scope of the work you need to do? In what sequence should this new work be done? How much staff time should be diverted to this task in the next x weeks? In web publishing, there are always components that are in transition, moving from "trusted" to "broken" and eventually to "obsolete." Do you know where they are? How much damage are they causing right now to your user experience? What do you plan to do about them?
 
@@ -27,7 +27,7 @@ Web site repair does not need to be spotty or haphazard. Nor should an organizat
 
 ### Screenshot (this version is NOT interactive)
 
-Rectangle volume shows relative number of HTML pages; some communication packages are small; some are large. Green shading / zero points means no errors were found. Shade of red / total count of points show severity of the problem being analyzed. 
+Rectangle volume shows relative number of HTML pages; some communication packages are small; some are large. Green shading / zero points means no errors were found. Shade of blue / total count of points show severity of the problem being analyzed. 
 
 In this version of the map, points are used rather than the count of broken links, so management can increase the severity of a particular problem the organization wants solved before others. When one repair should be completed ASAP, staff will want to focus on only that one problem. When more time is available, staff can overlay multiple problem reports so they can make multiple types of repair when each page is opened for editing. In this display, broken link counts were multiplied by two in order to make broken links more prominent among multiple types of problems are being analyzed at the same time.
 
