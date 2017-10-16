@@ -16,7 +16,7 @@ Have you felt blindsided by a new requirement to fix an issue that appears acros
 When the job to be done is finding, scheduling, and fixing problems that are disrupting customer visits today, or finding and proactively retiring obsolete code and content that will hinder your organization's ability to deliver good experiences in the future, this tool can:
 
 1. Help you visualize exactly where problems are occurring within your site, with their level of severity.
-2. Reveal by microsite name and traffic how much this severity ought to matter to you as you organize your staff efforts to repair the site.
+2. Reveal by microsite name and traffic how much this severity ought to matter to you as you organize your staff efforts to repair the site. While traffic should certainly play a role in how you manage your site, you should NOT use it in a way that damages your relationship with small target audiences. All site traffic should be judged relative to the size of their target audiences.
 
 This is done by establishing a foundational metaphor for your whole ecology - a map. Then when any new situation arises, you overlay the new report, consisting of URL-Problem Description, quickly and easily onto the map, by itself or together with other problem reports, so all teams can comprehend the situation they are in and start on the shortest path to positive action.
 
