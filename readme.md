@@ -32,6 +32,7 @@ Rectangle volume shows relative number of HTML pages; some communication package
 In this version of the map, points are used rather than the count of broken links, so management can increase the severity of a particular problem the organization wants solved before others. When one repair should be completed ASAP, staff will want to focus on only that one problem. When more time is available, staff can overlay multiple problem reports so they can make multiple types of repair when each page is opened for editing. In this display, broken link counts were multiplied by two in order to make broken links more prominent among multiple types of problems are being analyzed at the same time.
 
 ![screensot](treemap.png)
+[The Gist version is interactive](http://bl.ocks.org/wendlingd/af1e751e97c5211ff11277c985e5e642)
 
 ## Recommendations
 
