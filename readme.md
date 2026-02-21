@@ -18,3 +18,5 @@ Put your own content-audit data into this JSON format and you will have:
 - Fill shading, i.e., box background = broken-link severity for the product (issue_instances); gray means no errors found; blue means errors found, with darker blue meaning more errors. White means no traffic to the product in the time period studied.
 - Highlights on/off = traffic cutoff: Move the traffic slider to focus on what might be your highest customer harm, meaning, areas where the highest number of customers are encountering broken links.
 
+Screenshot:
+![D3.js treemap](treemap_image.png)
