@@ -1,0 +1,1539 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Microsite Repair Kit</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      padding: 12px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: transparent;
+      line-height: 1.45;
+    }
+    a { text-underline-offset: 2px; }
+    a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible {
+      outline: 3px solid #005ea2;
+      outline-offset: 2px;
+    }
+    .skip-link {
+      position: absolute;
+      left: 8px;
+      top: -40px;
+      background: #ffffff;
+      color: #111827;
+      border: 2px solid #005ea2;
+      border-radius: 6px;
+      padding: 6px 10px;
+      z-index: 9999;
+    }
+    .skip-link:focus { top: 8px; }
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    #app { color: #111827; }
+    #controls, #controls * { color: inherit; }
+    #controls { margin-bottom: 0.75rem; }
+    #controls label { font-weight: 600; }
+    table.dataframe { border-collapse: collapse; width: 100%; max-width: 100%; }
+    table.dataframe caption { text-align: left; font-weight: 700; padding: 0.35rem 0; }
+    table.dataframe th, table.dataframe td { padding: 0.35rem 0.5rem; vertical-align: top; }
+    #table-wrap { overflow-x: auto; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e5e7eb; }
+      #app { color: #e5e7eb; }
+      .skip-link { background: #111827; color: #f9fafb; border-color: #58a6ff; }
+      a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline-color: #58a6ff; }
+      table.dataframe th, table.dataframe td { border-color: #6b7280; }
+    }
+  </style>
+</head>
+
+<body>
+<a id="top"></a>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<main id="main-content">
+
+   <h1>Web Microsite Repair Kit</h1>
+
+   <p>
+     <a href="#map">Map of issues</a> | <a href="#table">Table of issues</a>
+   </p>
+  <p class="intro-tight"><strong>[Date of report]</strong> -- This report represents <strong>[count]</strong> broken links within <strong>[count]</strong> web products.</p>
+
+
+<h2 id="map">Map of issues</h2>
+   <ul>
+        <li>By default, the <strong>box volume</strong> is page count for the product, but use the dropdown for other options.</li>
+        <li>Any product <strong>shaded blue</strong> has broken hyperlinks. Darker means more; hover for counts.</li>
+        <li><strong>Thicker border</strong> separates lines of business/org chart pieces/etc.</li>
+        <li><strong>Drag the traffic slider</strong> to locate your highest-traffic issues / highest-severity areas.</li>
+   </ul>
+
+  <p id="chart-a11y-help">Interactive treemap. Use Tab to move to each box. Press Enter or Space to open the report for a selected item in a new tab. Use the controls to change area and filtering.</p>
+  <div id="chart-status" class="visually-hidden" aria-live="polite"></div>
+  <div id="app" aria-describedby="chart-a11y-help"></div>
+
+
+<h2 id="table">Table of issues</h2>
+<div id="table-wrap">
+  <table border="1" class="dataframe">
+  <caption>Issue summary by steward and page group</caption>
+  <thead>
+    <tr style="text-align: right;">
+      <th scope="col">steward_id</th>
+      <th scope="col">steward_name</th>
+      <th scope="col">page_group_id</th>
+      <th scope="col">page_group_name</th>
+      <th scope="col">unique_source_pages</th>
+      <th scope="col">avg_monthly_views</th>
+      <th scope="col">issue_instances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>20000</td>
+      <td>Hospital topics</td>
+      <td>4257</td>
+      <td>Experiments and observations on the summer ventilation and cooling of hospitals</td>
+      <td>7</td>
+      <td>11358</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20000</td>
+      <td>Hospital topics</td>
+      <td>4253</td>
+      <td>Laws and regulations for the admission and discharge of patients</td>
+      <td>8</td>
+      <td>11605</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>20000</td>
+      <td>Hospital topics</td>
+      <td>4255</td>
+      <td>Methodist General Hospital: Origin, purposes, needs</td>
+      <td>146</td>
+      <td>5941</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4498</td>
+      <td>A dictionary of medical terminology, dental surgery, and the collateral sciences</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4502</td>
+      <td>Anaesthetics: Brief of points and proofs in support of petitions, memorials, resolutions and letters</td>
+      <td>7</td>
+      <td>14</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4171</td>
+      <td>Have we the best possible ambulance system?</td>
+      <td>1</td>
+      <td>3483</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4436</td>
+      <td>Lasting legacies: Gifts to medicine and the American people</td>
+      <td>67</td>
+      <td>4</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4469</td>
+      <td>Notes on the cholera at Varna in 1854</td>
+      <td>2</td>
+      <td>324464</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4435</td>
+      <td>On ecclecticism in medicine, or: A critical review of the leading medical doctrines</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4325</td>
+      <td>Synopsis of lectures on obstetrics and the forms of disease peculiar to women and children</td>
+      <td>4</td>
+      <td>2646</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4497</td>
+      <td>The American practice abridged, or the family physician: Being the scientific system of medicines</td>
+      <td>25</td>
+      <td>42</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4493</td>
+      <td>The family physician: Comprising rules for the prevention and cure of diseases</td>
+      <td>9</td>
+      <td>715</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4494</td>
+      <td>The new forensic science</td>
+      <td>42</td>
+      <td>29584</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4170</td>
+      <td>The old root and herb doctor</td>
+      <td>32</td>
+      <td>654</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>160000</td>
+      <td>Medical topics from before 1900</td>
+      <td>4480</td>
+      <td>The ship and shore physician and surgeon</td>
+      <td>1</td>
+      <td>83</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4454</td>
+      <td>A manual of military surgery</td>
+      <td>67</td>
+      <td>231</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4324</td>
+      <td>Directions to Army surgeons on the field of battle</td>
+      <td>17</td>
+      <td>14864</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4437</td>
+      <td>Hints for the control and prevention of infectious diseases, in camps, transports, and hospitals</td>
+      <td>19</td>
+      <td>1493</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4460</td>
+      <td>Instructions for medical inspectors of the United States Army</td>
+      <td>349</td>
+      <td>689</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4459</td>
+      <td>On the duties of surgeons on the march</td>
+      <td>212</td>
+      <td>155</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4575</td>
+      <td>Regulations for the Medical Department of the Army</td>
+      <td>19</td>
+      <td>1493</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4461</td>
+      <td>Reports on the condition of military hospitals</td>
+      <td>199</td>
+      <td>1000</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4449</td>
+      <td>Rules for preserving the health of the soldier</td>
+      <td>20</td>
+      <td>2464</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4442</td>
+      <td>Rules regarding the measures to be adopted on the outbreak of cholera or appearance of small-pox</td>
+      <td>103</td>
+      <td>16029</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>70000</td>
+      <td>Military topics</td>
+      <td>4464</td>
+      <td>The Medical Department, U.S. Army</td>
+      <td>198</td>
+      <td>7309</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4182</td>
+      <td>A century of nursing</td>
+      <td>426</td>
+      <td>103375</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4692</td>
+      <td>A manual of nursing</td>
+      <td>111</td>
+      <td>49169</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4195</td>
+      <td>Fever-nursing</td>
+      <td>161</td>
+      <td>46</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4662</td>
+      <td>Hospital sisters and their duties</td>
+      <td>12</td>
+      <td>0</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4412</td>
+      <td>Manual of rules for child-bed nursing</td>
+      <td>57</td>
+      <td>518</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4668</td>
+      <td>Remarks on the training of nurses</td>
+      <td>137</td>
+      <td>685</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4674</td>
+      <td>The historical development of modern nursing</td>
+      <td>146</td>
+      <td>6303</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>30000</td>
+      <td>Nursing topics</td>
+      <td>4667</td>
+      <td>The nurse, or, Hints on the care of the sick</td>
+      <td>53</td>
+      <td>848</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4346</td>
+      <td>A sketch of the life of Horatio R. Storer, M.D.</td>
+      <td>113</td>
+      <td>2819</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4288</td>
+      <td>Addresses on the reciprocal relations existing between physicians and the public</td>
+      <td>10</td>
+      <td>41224</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4317</td>
+      <td>Addresses to Medical Societies</td>
+      <td>145</td>
+      <td>13366</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4361</td>
+      <td>Benjamin Rush and American psychiatry</td>
+      <td>113</td>
+      <td>2819</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4285</td>
+      <td>Memoir of Butler Wilmarth, M.D.</td>
+      <td>55</td>
+      <td>10</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4313</td>
+      <td>Memoir of the life and character of Prof. Valentine Mott</td>
+      <td>52</td>
+      <td>2921</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4344</td>
+      <td>On the responsibilities of the medical profession</td>
+      <td>350</td>
+      <td>77068</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4276</td>
+      <td>Proofs of the origin of the yellow fever</td>
+      <td>102</td>
+      <td>1235</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4284</td>
+      <td>The century's progress in anatomy and physiology</td>
+      <td>109</td>
+      <td>10869</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4376</td>
+      <td>The country physician</td>
+      <td>118</td>
+      <td>11548</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4299</td>
+      <td>The difficulties, duties, and rewards of the physician</td>
+      <td>119</td>
+      <td>61265</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4278</td>
+      <td>The elements of medical eminence</td>
+      <td>141</td>
+      <td>74203</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4316</td>
+      <td>The physician's knowledge: Orations</td>
+      <td>23</td>
+      <td>22373</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4382</td>
+      <td>The reciprocal relations of physicians and clergymen</td>
+      <td>151</td>
+      <td>1366</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4432</td>
+      <td>The relation of the medical profession to science</td>
+      <td>230</td>
+      <td>56028</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4270</td>
+      <td>The ups and downs of a doctor's life</td>
+      <td>164</td>
+      <td>33154</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>50000</td>
+      <td>Physician topics</td>
+      <td>4308</td>
+      <td>Two lectures on the conduct of the medical life</td>
+      <td>243</td>
+      <td>914</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4418</td>
+      <td>A new handle and grip for scissors for plastic and other delicate work</td>
+      <td>195</td>
+      <td>1282</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4421</td>
+      <td>Catalogue of surgical instruments and physicians' supplies, electric and orthopedic apparatus</td>
+      <td>195</td>
+      <td>67329</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4422</td>
+      <td>General surgical pathology and therapeutics</td>
+      <td>156</td>
+      <td>60598</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4416</td>
+      <td>Manual of operative surgery</td>
+      <td>150</td>
+      <td>30321</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4417</td>
+      <td>Minor surgery and bandaging</td>
+      <td>150</td>
+      <td>47197</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4423</td>
+      <td>On the antiseptic treatment of wounds</td>
+      <td>42</td>
+      <td>57917</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4420</td>
+      <td>Pompeian surgery and surgical instruments</td>
+      <td>194</td>
+      <td>1372</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4419</td>
+      <td>The disinfection of dental and surgical instruments</td>
+      <td>197</td>
+      <td>4318</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4425</td>
+      <td>The present status of abdominal surgery</td>
+      <td>108</td>
+      <td>12054</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>60000</td>
+      <td>Surgery topics</td>
+      <td>4413</td>
+      <td>The principles and practice of surgery</td>
+      <td>159</td>
+      <td>196426</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+   <!-- Replace this with your own hierarchical JSON if desired -->
+  <script type="application/json" id="treemap-data">
+{
+  "name": "contentByGroup",
+  "children": [
+    {
+      "steward_id": "30000",
+      "steward_name": "Nursing topics",
+      "children": [
+        {
+          "page_group_id": "4692",
+          "page_group_name": "A manual of nursing",
+          "unique_source_pages": 111,
+          "avg_monthly_views": 49169,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4182",
+          "page_group_name": "A century of nursing",
+          "unique_source_pages": 426,
+          "avg_monthly_views": 103375,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4412",
+          "page_group_name": "Manual of rules for child-bed nursing",
+          "unique_source_pages": 57,
+          "avg_monthly_views": 518,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4662",
+          "page_group_name": "Hospital sisters and their duties",
+          "unique_source_pages": 12,
+          "avg_monthly_views": 0,
+          "issue_instances": 10
+        },
+        {
+          "page_group_id": "4195",
+          "page_group_name": "Fever-nursing",
+          "unique_source_pages": 161,
+          "avg_monthly_views": 46,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4667",
+          "page_group_name": "The nurse, or, Hints on the care of the sick",
+          "unique_source_pages": 53,
+          "avg_monthly_views": 848,
+          "issue_instances": 1
+        },
+        {
+          "page_group_id": "4674",
+          "page_group_name": "The historical development of modern nursing",
+          "unique_source_pages": 146,
+          "avg_monthly_views": 6303,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4668",
+          "page_group_name": "Remarks on the training of nurses",
+          "unique_source_pages": 137,
+          "avg_monthly_views": 685,
+          "issue_instances": 10
+        }
+      ]
+    },
+    {
+      "steward_id": "20000",
+      "steward_name": "Hospital topics",
+      "children": [
+        {
+          "page_group_id": "4255",
+          "page_group_name": "Methodist General Hospital: Origin, purposes, needs",
+          "unique_source_pages": 146,
+          "avg_monthly_views": 5941,
+          "issue_instances": 2
+        },
+        {
+          "page_group_id": "4253",
+          "page_group_name": "Laws and regulations for the admission and discharge of patients",
+          "unique_source_pages": 8,
+          "avg_monthly_views": 11605,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4257",
+          "page_group_name": "Experiments and observations on the summer ventilation and cooling of hospitals",
+          "unique_source_pages": 7,
+          "avg_monthly_views": 11358,
+          "issue_instances": 0
+        }
+      ]
+    },
+    {
+      "steward_id": "50000",
+      "steward_name": "Physician topics",
+      "children": [
+        {
+          "page_group_id": "4308",
+          "page_group_name": "Two lectures on the conduct of the medical life",
+          "unique_source_pages": 243,
+          "avg_monthly_views": 914,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4285",
+          "page_group_name": "Memoir of Butler Wilmarth, M.D.",
+          "unique_source_pages": 55,
+          "avg_monthly_views": 10,
+          "issue_instances": 84
+        },
+        {
+          "page_group_id": "4270",
+          "page_group_name": "The ups and downs of a doctor's life",
+          "unique_source_pages": 164,
+          "avg_monthly_views": 33154,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4288",
+          "page_group_name": "Addresses on the reciprocal relations existing between physicians and the public",
+          "unique_source_pages": 10,
+          "avg_monthly_views": 41224,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4276",
+          "page_group_name": "Proofs of the origin of the yellow fever",
+          "unique_source_pages": 102,
+          "avg_monthly_views": 1235,
+          "issue_instances": 26
+        },
+        {
+          "page_group_id": "4432",
+          "page_group_name": "The relation of the medical profession to science",
+          "unique_source_pages": 230,
+          "avg_monthly_views": 56028,
+          "issue_instances": 68
+        },
+        {
+          "page_group_id": "4316",
+          "page_group_name": "The physician's knowledge: Orations",
+          "unique_source_pages": 23,
+          "avg_monthly_views": 22373,
+          "issue_instances": 52
+        },
+        {
+          "page_group_id": "4313",
+          "page_group_name": "Memoir of the life and character of Prof. Valentine Mott",
+          "unique_source_pages": 52,
+          "avg_monthly_views": 2921,
+          "issue_instances": 2
+        },
+        {
+          "page_group_id": "4344",
+          "page_group_name": "On the responsibilities of the medical profession",
+          "unique_source_pages": 350,
+          "avg_monthly_views": 77068,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4382",
+          "page_group_name": "The reciprocal relations of physicians and clergymen",
+          "unique_source_pages": 151,
+          "avg_monthly_views": 1366,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4317",
+          "page_group_name": "Addresses to Medical Societies",
+          "unique_source_pages": 145,
+          "avg_monthly_views": 13366,
+          "issue_instances": 2
+        },
+        {
+          "page_group_id": "4278",
+          "page_group_name": "The elements of medical eminence",
+          "unique_source_pages": 141,
+          "avg_monthly_views": 74203,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4299",
+          "page_group_name": "The difficulties, duties, and rewards of the physician",
+          "unique_source_pages": 119,
+          "avg_monthly_views": 61265,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4376",
+          "page_group_name": "The country physician",
+          "unique_source_pages": 118,
+          "avg_monthly_views": 11548,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4361",
+          "page_group_name": "Benjamin Rush and American psychiatry",
+          "unique_source_pages": 113,
+          "avg_monthly_views": 2819,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4346",
+          "page_group_name": "A sketch of the life of Horatio R. Storer, M.D.",
+          "unique_source_pages": 113,
+          "avg_monthly_views": 2819,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4284",
+          "page_group_name": "The century's progress in anatomy and physiology",
+          "unique_source_pages": 109,
+          "avg_monthly_views": 10869,
+          "issue_instances": 0
+        }
+      ]
+    },
+    {
+      "steward_id": "60000",
+      "steward_name": "Surgery topics",
+      "children": [
+        {
+          "page_group_id": "4419",
+          "page_group_name": "The disinfection of dental and surgical instruments",
+          "unique_source_pages": 197,
+          "avg_monthly_views": 4318,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4418",
+          "page_group_name": "A new handle and grip for scissors for plastic and other delicate work",
+          "unique_source_pages": 195,
+          "avg_monthly_views": 1282,
+          "issue_instances": 12
+        },
+        {
+          "page_group_id": "4421",
+          "page_group_name": "Catalogue of surgical instruments and physicians' supplies, electric and orthopedic apparatus",
+          "unique_source_pages": 195,
+          "avg_monthly_views": 67329,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4420",
+          "page_group_name": "Pompeian surgery and surgical instruments",
+          "unique_source_pages": 194,
+          "avg_monthly_views": 1372,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4413",
+          "page_group_name": "The principles and practice of surgery",
+          "unique_source_pages": 159,
+          "avg_monthly_views": 196426,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4422",
+          "page_group_name": "General surgical pathology and therapeutics",
+          "unique_source_pages": 156,
+          "avg_monthly_views": 60598,
+          "issue_instances": 5
+        },
+        {
+          "page_group_id": "4416",
+          "page_group_name": "Manual of operative surgery",
+          "unique_source_pages": 150,
+          "avg_monthly_views": 30321,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4417",
+          "page_group_name": "Minor surgery and bandaging",
+          "unique_source_pages": 150,
+          "avg_monthly_views": 47197,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4425",
+          "page_group_name": "The present status of abdominal surgery",
+          "unique_source_pages": 108,
+          "avg_monthly_views": 12054,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4423",
+          "page_group_name": "On the antiseptic treatment of wounds",
+          "unique_source_pages": 42,
+          "avg_monthly_views": 57917,
+          "issue_instances": 0
+        }
+      ]
+    },
+    {
+      "steward_id": "70000",
+      "steward_name": "Military topics",
+      "children": [
+        {
+          "page_group_id": "4464",
+          "page_group_name": "The Medical Department, U.S. Army",
+          "unique_source_pages": 198,
+          "avg_monthly_views": 7309,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4459",
+          "page_group_name": "On the duties of surgeons on the march",
+          "unique_source_pages": 212,
+          "avg_monthly_views": 155,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4461",
+          "page_group_name": "Reports on the condition of military hospitals",
+          "unique_source_pages": 199,
+          "avg_monthly_views": 1000,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4460",
+          "page_group_name": "Instructions for medical inspectors of the United States Army",
+          "unique_source_pages": 349,
+          "avg_monthly_views": 689,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4442",
+          "page_group_name": "Rules regarding the measures to be adopted on the outbreak of cholera or appearance of small-pox",
+          "unique_source_pages": 103,
+          "avg_monthly_views": 16029,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4454",
+          "page_group_name": "A manual of military surgery",
+          "unique_source_pages": 67,
+          "avg_monthly_views": 231,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4449",
+          "page_group_name": "Rules for preserving the health of the soldier",
+          "unique_source_pages": 20,
+          "avg_monthly_views": 2464,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4437",
+          "page_group_name": "Hints for the control and prevention of infectious diseases, in camps, transports, and hospitals",
+          "unique_source_pages": 19,
+          "avg_monthly_views": 1493,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4575",
+          "page_group_name": "Regulations for the Medical Department of the Army",
+          "unique_source_pages": 19,
+          "avg_monthly_views": 1493,
+          "issue_instances": 2
+        },
+        {
+          "page_group_id": "4324",
+          "page_group_name": "Directions to Army surgeons on the field of battle",
+          "unique_source_pages": 17,
+          "avg_monthly_views": 14864,
+          "issue_instances": 8
+        }
+      ]
+    },
+    {
+      "steward_name": "Medical topics from before 1900",
+      "steward_id": "160000",
+      "children": [
+        {
+          "page_group_id": "4436",
+          "page_group_name": "Lasting legacies: Gifts to medicine and the American people",
+          "unique_source_pages": 67,
+          "avg_monthly_views": 4,
+          "issue_instances": 2
+        },
+        {
+          "page_group_id": "4494",
+          "page_group_name": "The new forensic science",
+          "unique_source_pages": 42,
+          "avg_monthly_views": 29584,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4170",
+          "page_group_name": "The old root and herb doctor",
+          "unique_source_pages": 32,
+          "avg_monthly_views": 654,
+          "issue_instances": 4
+        },
+        {
+          "page_group_id": "4497",
+          "page_group_name": "The American practice abridged, or the family physician: Being the scientific system of medicines",
+          "unique_source_pages": 25,
+          "avg_monthly_views": 42,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4498",
+          "page_group_name": "A dictionary of medical terminology, dental surgery, and the collateral sciences",
+          "unique_source_pages": 12,
+          "avg_monthly_views": 0,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4493",
+          "page_group_name": "The family physician: Comprising rules for the prevention and cure of diseases",
+          "unique_source_pages": 9,
+          "avg_monthly_views": 715,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4502",
+          "page_group_name": "Anaesthetics: Brief of points and proofs in support of petitions, memorials, resolutions and letters",
+          "unique_source_pages": 7,
+          "avg_monthly_views": 14,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4435",
+          "page_group_name": "On ecclecticism in medicine, or: A critical review of the leading medical doctrines",
+          "unique_source_pages": 6,
+          "avg_monthly_views": 1,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4325",
+          "page_group_name": "Synopsis of lectures on obstetrics and the forms of disease peculiar to women and children",
+          "unique_source_pages": 4,
+          "avg_monthly_views": 2646,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4469",
+          "page_group_name": "Notes on the cholera at Varna in 1854",
+          "unique_source_pages": 2,
+          "avg_monthly_views": 324464,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4171",
+          "page_group_name": "Have we the best possible ambulance system?",
+          "unique_source_pages": 1,
+          "avg_monthly_views": 3483,
+          "issue_instances": 0
+        },
+        {
+          "page_group_id": "4480",
+          "page_group_name": "The ship and shore physician and surgeon",
+          "unique_source_pages": 1,
+          "avg_monthly_views": 83,
+          "issue_instances": 0
+        }
+      ]
+    }
+  ]
+}
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <!-- if local <script src="./vendor/d3.v7.min.js"></script> -->
+
+  <script>
+    if (!window.d3) {
+      const msg = document.createElement("p");
+      msg.style.color = "crimson";
+      msg.style.fontWeight = "700";
+      msg.textContent = "D3 library not found. Download d3.v7.min.js and save it to ./vendor/d3.v7.min.js";
+      document.body.insertBefore(msg, document.getElementById("app"));
+    }
+  </script>
+  <script>
+  (function() {
+    if (!window.d3) return;
+    let width = 1200;
+    let height = 650;
+    const ASPECT_RATIO = height / width;
+
+    let volumeDim = "unique_source_pages";
+    const shadeDim  = "issue_instances";
+    let trafficCutoff = 1;
+    let showParentLabels = true;
+    const PARENT_LABEL_DEPTH = 1;
+
+    const volumeOptions = [
+      { value: "unique_source_pages", label: "Pages (unique_source_pages)" },
+      { value: "avg_monthly_views", label: "Avg monthly views (avg_monthly_views)" },
+      { value: "issue_instances", label: "Problems (issue_instances)" },
+    ];
+
+    function fmtInt(x) {
+      const n = Number(x);
+      if (!Number.isFinite(n)) return String(x ?? "");
+      return n.toLocaleString("en-US");
+    }
+
+    function safeNum(x, fallback = 0) {
+      const n = Number(x);
+      return Number.isFinite(n) ? n : fallback;
+    }
+
+    const rootEl = d3.select("#app");
+
+    const controls = rootEl.append("div")
+      .attr("id", "controls")
+      .style("display", "flex")
+      .style("gap", "16px")
+      .style("align-items", "center")
+      .style("flex-wrap", "wrap")
+      .style("margin", "8px 0 12px 0");
+
+    controls.append("div").attr("id","controls-heading").html("<strong>Controls:</strong>");
+
+    const dimSelect = controls.append("label").attr("for","volume-dim-select")
+      .style("display","flex")
+      .style("gap","8px")
+      .style("align-items","center");
+    dimSelect.append("span").text("Area:");
+    const selectEl = dimSelect.append("select").attr("id","volume-dim-select").attr("aria-describedby","chart-a11y-help")
+      .style("padding","4px 6px")
+      .on("change", (event) => {
+        volumeDim = event.target.value;
+        render();
+      });
+
+    selectEl.selectAll("option")
+      .data(volumeOptions)
+      .enter()
+      .append("option")
+      .attr("value", d => d.value)
+      .property("selected", d => d.value === volumeDim)
+      .text(d => d.label);
+
+    const parentCheck = controls.append("label").attr("for","show-parent-labels")
+      .style("display","flex")
+      .style("gap","8px")
+      .style("align-items","center");
+    parentCheck.append("input")
+      .attr("id","show-parent-labels")
+      .attr("type","checkbox")
+      .property("checked", true)
+      .on("change", (event) => {
+        showParentLabels = event.target.checked;
+        positionParentLabels();
+      });
+    parentCheck.append("span").html("<strong>Show ownership</strong>");
+
+    const sliderWrap = controls.append("label").attr("for","traffic-cutoff")
+      .style("display","flex")
+      .style("gap","10px")
+      .style("align-items","center");
+
+    sliderWrap.append("span").text("Traffic cutoff (avg views/mo):");
+
+    const sliderVal = sliderWrap.append("output").attr("id","traffic-cutoff-value").attr("for","traffic-cutoff").attr("aria-live","polite")
+      .style("min-width","110px")
+      .style("font-variant-numeric","tabular-nums")
+      .text(fmtInt(trafficCutoff));
+
+    sliderWrap.append("input")
+      .attr("id","traffic-cutoff")
+      .attr("type","range")
+      .attr("aria-describedby","chart-a11y-help traffic-cutoff-value")
+      .attr("min","1")
+      .attr("max","100000")
+      .attr("step","50")
+      .property("value", trafficCutoff)
+      .on("input", (event) => {
+        trafficCutoff = Number(event.target.value);
+        sliderVal.text(fmtInt(trafficCutoff));
+        updateHighlightOnly();
+      });
+
+    const chartWrap = rootEl.append("div")
+      .style("position","relative")
+      .style("width","100%");
+
+    function computeSize(el) {
+      const w = Math.max(320, Math.floor(el.getBoundingClientRect().width || 1200));
+      const h = Math.max(360, Math.floor(w * ASPECT_RATIO));
+      return { w, h };
+    }
+
+    const labelLayer = chartWrap.append("div")
+      .style("position", "absolute")
+      .style("left", "0px")
+      .style("top", "0px")
+      .style("width", `${width}px`)
+      .style("height", `${height}px`)
+      .style("pointer-events", "none");
+
+    const tooltip = chartWrap.append("div").attr("aria-hidden","true")
+      .style("position","absolute")
+      .style("pointer-events","none")
+      .style("background","#111")
+      .style("color","#fff")
+      .style("padding","10px 12px")
+      .style("border-radius","8px")
+      .style("font-size","12px")
+      .style("line-height","1.35")
+      .style("box-shadow","0 6px 24px rgba(0,0,0,0.25)")
+      .style("opacity","0");
+
+    tooltip.html(`
+      <div style="font-weight:700; margin-bottom:4px;" id="ttTitle"></div>
+      <div id="ttOwner" style="opacity:0.85; margin-bottom:6px;"></div>
+      <div id="ttTraffic"></div>
+      <div id="ttPagesProblems" style="margin-top:4px;"></div>
+    `);
+
+    const svg = chartWrap.append("svg").attr("role","img").attr("aria-labelledby","treemapTitle treemapDesc")
+      .attr("viewBox", `0 0 ${width} ${height}`)
+      .attr("preserveAspectRatio", "xMidYMid meet")
+      .style("width","100%")
+      .style("height","auto")
+      .style("display","block")
+      .style("border","1px solid #e5e7eb")
+      .style("border-radius","10px");
+
+    svg.append("title").attr("id","treemapTitle").text("Treemap of web microsite repair issues");
+    svg.append("desc").attr("id","treemapDesc").text("Interactive treemap showing page groups sized by a selected metric and shaded by issue count. Use keyboard tab navigation to focus boxes and Enter to open a report.");
+    const g = svg.append("g");
+    const data = JSON.parse(document.getElementById("treemap-data").textContent);
+
+    function maxRepairCount(node) {
+      let max = 0;
+      (function walk(n) {
+        if (!n) return;
+        if (n.children) n.children.forEach(walk);
+        else max = Math.max(max, safeNum(n[shadeDim], 0));
+      })(node);
+      return max;
+    }
+
+    const maxShade = Math.max(1, maxRepairCount(data));
+    const colorScale = d3.scaleLog()
+      .domain([1, maxShade])
+      .range(["#9ecae1", "#08306b"])
+      .clamp(true);
+
+    function buildHierarchy() {
+      return d3.hierarchy(data)
+        .sum(d => safeNum(d[volumeDim], 0))
+        .sort((a,b) => (b.value ?? 0) - (a.value ?? 0));
+    }
+
+    function layout(root) {
+      return d3.treemap()
+        .size([width, height])
+        .paddingInner(0)
+        .paddingOuter(3)
+        .round(true)(root);
+    }
+
+    function nodeFill(d) {
+      if (d.children) return "#f8fafc";
+      const traffic = safeNum(d.data.avg_monthly_views, -99);
+      const problems = safeNum(d.data.issue_instances, 0);
+      if (traffic > trafficCutoff) {
+        if (problems < 1) return "#d3d3d3";
+        return colorScale(problems);
+      }
+      return "#ffffff";
+    }
+
+    function nodeStroke(d) {
+      if (d.children) return "#cbd5e1";
+      const traffic = safeNum(d.data.avg_monthly_views, -99);
+      return (traffic > trafficCutoff) ? "#111827" : "#e5e7eb";
+    }
+
+    function leafLabelText(d) {
+      const w = d.x1 - d.x0;
+      const h = d.y1 - d.y0;
+      if (w * h < 1200) return "";
+      const problems = safeNum(d.data.issue_instances, 0);
+      const name = d.data.page_group_name || d.data.name || "";
+      return `${name}${problems ? ` (${fmtInt(problems)})` : ""}`;
+    }
+
+    const statusRegion = document.getElementById("chart-status");
+
+    function showTooltip(event, d) {
+      if (d.children) return;
+
+      const owner = d.parent?.data?.steward_name ?? d.parent?.data?.name ?? "";
+      const title = d.data.page_group_name ?? d.data.name ?? "";
+
+      const traffic = safeNum(d.data.avg_monthly_views, -99);
+      let trafficText = "Estimate unavailable";
+      if (traffic !== -99) {
+        trafficText = (traffic > 180000) ? "More than 180,000 per month" : `${fmtInt(traffic)} avg views/month`;
+      }
+
+      const pages = safeNum(d.data[volumeDim], 0);
+      const problems = safeNum(d.data.issue_instances, 0);
+      const numericText = `${fmtInt(pages)} (${volumeDim}) / ${fmtInt(problems)} problems`;
+
+      tooltip.select("#ttTitle").text(title);
+      tooltip.select("#ttOwner").text(owner);
+      tooltip.select("#ttTraffic").text(trafficText);
+      tooltip.select("#ttPagesProblems").text(numericText);
+      if (statusRegion) { statusRegion.textContent = `${title}. ${owner}. ${trafficText}. ${numericText}.`; }
+
+      const [mx, my] = d3.pointer(event, chartWrap.node());
+      const ttNode = tooltip.node();
+      const ttW = ttNode.offsetWidth;
+      const ttH = ttNode.offsetHeight;
+
+      let x = mx + 12;
+      let y = my + 12;
+      if (x + ttW > width) x = mx - ttW - 12;
+      if (y + ttH > height) y = my - ttH - 12;
+
+      tooltip.style("left", `${x}px`).style("top", `${y}px`).style("opacity", 1);
+    }
+
+    function hideTooltip() { tooltip.style("opacity", 0); }
+
+    function updateHighlightOnly() {
+      g.selectAll("rect.leaf").attr("fill", nodeFill);
+    }
+
+    function reportHref(pageGroupId, issueInstances) {
+      // Stand-alone HTML mode (works with file:/// and static hosting).
+      // Layout:
+      //   treemap_standalone.html
+      //   no_issues_found.html
+      //   reports/4692.html
+      //   vendor/d3.v7.min.js
+      const raw = String(pageGroupId ?? "").trim();
+      if (!raw) return null;
+
+      const issues = safeNum(issueInstances, 0);
+      if (issues === 0) {
+        return "no_issues_found.html";
+      }
+
+      // Accept either "4692" or "4692.html" in your JSON.
+      const filename = raw.toLowerCase().endsWith(".html") ? raw : `${raw}.html`;
+      return `reports/${encodeURIComponent(filename)}`;
+    }
+
+    function ownershipPathForParent(d) {
+      return d.ancestors()
+        .reverse()
+        .map(a => a?.data?.steward_name ?? a?.data?.name)
+        .filter(n => n && n !== "contentByGroup")
+        .join(" / ");
+    }
+
+    function buildParentLabels(parentsForLabels) {
+      labelLayer.selectAll("div.parentlabel")
+        .data(parentsForLabels, d => d.data.steward_id ?? d.data.page_group_id ?? d.data.page_group_name ?? d.data.name)
+        .join(
+          enter => enter.append("div")
+            .attr("class", "parentlabel").attr("aria-hidden","true")
+            .style("position", "absolute")
+            .style("padding", "12px 12px")
+            .style("box-sizing", "border-box")
+            .style("overflow", "hidden")
+            .style("white-space", "normal")
+            .style("line-height", "1.15")
+            .style("font-weight", "800")
+            .style("font-size", "16px")
+            .style("color", "#6d28d9")
+            .style("text-shadow", "0 1px 0 rgba(255,255,255,0.85)")
+            .style("opacity", "0.92")
+            .style("pointer-events", "none")
+            .text(d => ownershipPathForParent(d)),
+          update => update.text(d => ownershipPathForParent(d)),
+          exit => exit.remove()
+        );
+      positionParentLabels();
+    }
+
+    function positionParentLabels() {
+      labelLayer.selectAll("div.parentlabel")
+        .style("left", d => `${d.x0 + 7}px`)
+        .style("top",  d => `${d.y0 + 7}px`)
+        .style("width", d => `${Math.max(0, (d.x1 - d.x0) - 26)}px`)
+        .style("height", d => `${Math.max(0, (d.y1 - d.y0) - 26)}px`)
+        .style("display", d => {
+          const w = d.x1 - d.x0;
+          const h = d.y1 - d.y0;
+          return (showParentLabels && w > 70 && h > 30) ? "block" : "none";
+        });
+    }
+
+    function render() {
+      const s = computeSize(chartWrap.node());
+      width = s.w; height = s.h;
+      svg.attr("viewBox", `0 0 ${width} ${height}`).attr("height", height);
+      labelLayer.style("width", `${width}px`).style("height", `${height}px`);
+
+      g.selectAll("*").remove();
+      hideTooltip();
+
+      const root = layout(buildHierarchy());
+      const nodes = root.descendants();
+      const parents = nodes.filter(d => d.children);
+
+      g.selectAll("g.parent")
+        .data(parents, d => d.data.steward_id ?? d.data.name)
+        .enter()
+        .append("g")
+        .attr("class","parent")
+        .attr("transform", d => `translate(${d.x0},${d.y0})`)
+        .each(function(d) {
+          const w = d.x1 - d.x0;
+          const h = d.y1 - d.y0;
+          d3.select(this).append("rect")
+            .attr("width", w)
+            .attr("height", h)
+            .attr("fill", "#f8fafc")
+            .attr("stroke", "#000")
+            .attr("stroke-width", 4);
+        });
+
+      const leaves = nodes.filter(d => !d.children);
+
+      const leafG = g.selectAll("g.leaf")
+        .data(leaves, d => d.data.page_group_id ?? d.data.page_group_name ?? d.data.name)
+        .enter()
+        .append("g")
+        .attr("class","leaf")
+        .attr("transform", d => `translate(${d.x0},${d.y0})`)
+        .style("cursor", "pointer")
+        .attr("tabindex", 0)
+        .attr("role", "link")
+        .attr("aria-label", d => {
+          const owner = d.parent?.data?.steward_name ?? "";
+          const title = d.data.page_group_name ?? d.data.name ?? "";
+          const issues = fmtInt(safeNum(d.data.issue_instances, 0));
+          const views = fmtInt(safeNum(d.data.avg_monthly_views, 0));
+          return `${title}. Steward ${owner}. ${issues} issue instances. ${views} average monthly views. Opens report in a new tab.`;
+        })
+        .on("keydown", (event, d) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            if (!d.data.page_group_id) return;
+            const href = reportHref(d.data.page_group_id, d.data.issue_instances);
+            if (!href) return;
+            window.open(href, "_blank", "noopener");
+          }
+        })
+        .on("mousemove", showTooltip)
+        .on("mouseleave", hideTooltip)
+        .on("focus", function(event, d) { showTooltip(event, d); d3.select(this).select("rect.leaf").attr("stroke-width", 3); })
+        .on("blur", function() { hideTooltip(); d3.select(this).select("rect.leaf").attr("stroke-dasharray", d => safeNum(d.data.issue_instances, 0) > 0 ? "3,2" : null)
+        .attr("stroke-width", 1); })
+        .on("click", (event, d) => {
+          if (!d.data.page_group_id) return;
+          const href = reportHref(d.data.page_group_id, d.data.issue_instances);
+          if (!href) return;
+          window.open(href, "_blank", "noopener");
+        });
+
+      leafG.append("rect")
+        .attr("class","leaf")
+        .attr("width", d => Math.max(0, d.x1 - d.x0))
+        .attr("height", d => Math.max(0, d.y1 - d.y0))
+        .attr("fill", nodeFill)
+        .attr("stroke", nodeStroke)
+        .attr("stroke-width", 1);
+
+      leafG.append("text")
+        .attr("x", 6)
+        .attr("y", 16)
+        .style("font-size","11px")
+        .style("fill","#0b1220")
+        .style("font-weight","600")
+        .style("pointer-events","none")
+        .text(leafLabelText);
+
+      updateHighlightOnly();
+      const parentsForLabels = parents.filter(d => d.depth === PARENT_LABEL_DEPTH);
+      buildParentLabels(parentsForLabels);
+    }
+
+    const _ro = new ResizeObserver(() => {
+      window.clearTimeout(window.__treemapResizeTimer);
+      window.__treemapResizeTimer = window.setTimeout(() => render(), 120);
+    });
+    _ro.observe(chartWrap.node());
+
+    render();
+  })();
+  </script>
+</main>
+</body>
+</html>
